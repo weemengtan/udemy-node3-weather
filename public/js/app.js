@@ -1,5 +1,3 @@
-console.log("JS Static file from JS");
-
 const dummyapi = 'http://puzzle.mead.io/puzzle'
 
 fetch(dummyapi).then((response) => {
