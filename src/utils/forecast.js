@@ -11,6 +11,8 @@ const forecast = (longitude, lattitude, callback) => {
         } else {
             const data = {
                     locationname: response.body.location.name,
+                    weathericon: response.body.current.weather_icons[0],
+                    weatherdesc: response.body.current.weather_descriptions[0],
                     currenttemperature: response.body.current.temperature,
                     currentfeelslike: response.body.current.feelslike
                 }

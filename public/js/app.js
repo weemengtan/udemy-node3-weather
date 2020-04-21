@@ -19,10 +19,12 @@ searchlocation.addEventListener('submit', (e) => {
         response.json().then((data) => {
             const messageOne = document.querySelector('#message-1')
             const messageTwo = document.querySelector('#message-2')
+            const weatherimage = document.querySelector('#weatherimage')
             if (data.error) {
                 messageOne.textContent = data.error;
                 console.log(messageOne);
             } else {
+                weatherimage.innerHTML = `<img src="${data.data.weathericon}" alt="weather icon"> ${data.data.weatherdesc}`
                 messageOne.textContent = `Latest Weather Report for location ${searchinput.value}.`
                 messageTwo.textContent = `Temperature is ${data.data.currenttemperature} degC and feels like ${data.data.currentfeelslike} degC.`
                 console.log(messageOne);
