@@ -1,0 +1,32 @@
+header h3 {
+    color: coral;
+    background-color: darkgreen;
+}
+
+body {
+    color: #B22222;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+footer {
+    color: lightpink;
+    text-align: center;
+}
+
+#puzzleoftheday {
+    font-family: fantasy;
+    color: cornflowerblue
+}
+
+.main-nav {
+    margin-bottom: 1rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5rem;
+    color: blanchedalmond;
+    font-weight: bold;
+}
