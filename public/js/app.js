@@ -14,7 +14,7 @@ const searchinput = document.querySelector('input')
 searchlocation.addEventListener('submit', (e) => {
     e.preventDefault() //default action of page refresh each time you click
     console.log(`test button click event, input value is ${searchinput.value}.`);
-    const webserverurl = `http://localhost:3000/forecast?address=${searchinput.value}`
+    const webserverurl = `/forecast?address=${searchinput.value}`
     fetch(webserverurl).then((response) => {
         response.json().then((data) => {
             const messageOne = document.querySelector('#message-1')
